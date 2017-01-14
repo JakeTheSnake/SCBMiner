@@ -9,7 +9,6 @@ class NewVisitorTest(unittest.TestCase):
   def tearDown(self):
     self.browser.quit()
 
-  def 
 
 
 if __name__ == '__main__':
