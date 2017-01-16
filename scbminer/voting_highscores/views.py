@@ -1,6 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-
+from voting_highscores.services import get_region_highscores
 
 def highscores(request):
-  return HttpResponse("hi")
+    highscores = list(get_region_highscores().items())
+    context = {
+        'highscores': sorted([(year, (result_list[0], result_list[1])) for (year, result_list) in highscores])
+    }
+    return render(request, 'index.html', context)
+

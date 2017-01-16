@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>Voting Highscores</title>
+</head>
+<body>
+<ul>
+{% for year, result in highscores %}
+    <li><b>{{ year }}:</b> {{ result.0 }} - {{ result.1 }}%</li>
+{% endfor %}
+</ul>
+</body>
+</html>
