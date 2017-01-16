@@ -25,7 +25,7 @@ SECRET_KEY = '3duhk#bt6#s98f8sh#r$ip)&8zw3y=kib^cq8o)3+9(8svt@15'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['agile-mesa-97640.herokuapp.com']
 
 
 # Application definition
