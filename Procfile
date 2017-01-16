@@ -1,1 +1,1 @@
-web: gunicorn scbminer.wsgi --log-file -
+web: cd scbminer && gunicorn scbminer.wsgi
