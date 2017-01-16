@@ -1,0 +1,1 @@
+web: gunicorn scbminer.wsgi --log-file -
